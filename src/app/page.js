@@ -1,3 +1,11 @@
-export default function Home() {
-  return <div className="container full__section_l_p">Home page</div>;
+import HomePage from '@/components/homePage/HomePage'
+
+export default function Home () {
+  return (
+    <div className='container'>
+      <div className='mt-14'>
+        <HomePage />
+      </div>
+    </div>
+  )
 }
