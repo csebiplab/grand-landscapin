@@ -46,13 +46,14 @@ img {
 }
 
 .full__section_r_p {
-  @apply max-w-screen-2xl mx-auto pr-0 md:pr-5 lg:pr-10 xl:pr-20 2xl:pr-sideGutter;
+  @apply mx-auto lg:pr-10 xl:pr-20 2xl:pr-sideGutter;
 }
 
 .full__section_l_p {
-  @apply max-w-screen-2xl mx-auto pl-0 md:pl-5 lg:pl-10 xl:pl-20 2xl:pl-sideGutter;
+  @apply mx-auto lg:pl-10 xl:pl-20 2xl:pl-sideGutter;
 }
 
+
 .full__section_x {
-  @apply max-w-screen-2xl mx-auto px-1 md:px-5 lg:px-10 xl:px-20 2xl:px-sideGutter;
+  @apply mx-auto px-sideGutterSmall md:px-sideGutterMedium lg:px-10 xl:px-20 2xl:px-sideGutter;
 }
