@@ -75,17 +75,17 @@ const services = [
   },
 ]
 
-const Qualities = () => {
+const ChooseUs = () => {
   return (
     <div className='container full__section_x'>
       <div className='py-5'>
-        <div className='bg__fiberglassPage'>
+        <div className=''>
           <div className='container'>
             <div className='flex flex-col items-center justify-center'>
               <div className='flex justify-center lg:justify-normal items-center'>
                 <HeadingIcon text={HeadingIconText.chooseUs} />
               </div>
-              <h2 className='text-[25px] md:text-3xl lg:text-[32px] xl:text-[35px]  leading-[35px] font-bold text-black text-center pb-[25px]'>
+              <h2 className='text-[25px] md:text-3xl lg:text-[32px] xl:text-[35px]  leading-[35px] font-bold text-black text-center pb-5'>
                 Why Choose Us
               </h2>
             </div>
@@ -103,10 +103,10 @@ const Qualities = () => {
               breakpoints={breakpoints}
               spaceBetween={12}
             >
-              {services.map(({ id, img, title, para }, index) => (
+              {services.map(({ img, title, para }, index) => (
                 <SwiperSlide key={index} className={`!h-auto !md:h-full`}>
                   {/* cart info  */}
-                  <div className='border border-[#049E43] rounded-2xl bg-white relative mt-10 h-60'>
+                  <div className='border border-[#e0dfdf] rounded-2xl bg-white relative mt-10 h-60'>
                     <div className='space-y-2 px-6 py-7 '>
                       <Image
                         src={img}
@@ -128,4 +128,4 @@ const Qualities = () => {
   )
 }
 
-export default Qualities
+export default ChooseUs
