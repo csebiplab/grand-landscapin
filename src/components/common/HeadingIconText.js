@@ -4,5 +4,10 @@ export const HeadingIconText = {
   chooseUs: 'Choose Us',
   gallery: 'Gallery',
   serviceArea: 'Service Area',
-  contactUs:"Contact Us"
+  contactUs: 'Contact Us',
+  // About Page
+  aboutUs: 'About Us',
+  workFlow: 'Work Flow',
+  // Blog
+  blogs:"Blogs"
 }
