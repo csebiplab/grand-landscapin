@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const HeaderNavbar = () => {
   return (
-    <div className='container relative'>
+    <div className='container relative z-10'>
       <div className='absolute w-[1183px] mx-auto left-[368px] -top-7 px-4 py-3 bg-white flex items-center justify-between'>
         <Image
           src='/grandLandscapingLogoNavbar.webp'
@@ -12,12 +12,26 @@ const HeaderNavbar = () => {
           alt='callIconNavbar'
         />
         <ul className='flex gap-6 items-center font-bold text-[17px]'>
-          <li>About</li>
+          <li>
+            <a className='text-black' href='/about'>
+              About
+            </a>
+          </li>
           <li>Services</li>
-          <li>Work</li>
-          <li>Projects</li>
-          <li>Blog</li>
-          <li>Contact Us</li>
+          <li><a className='text-black' href='/work'>
+              Work
+            </a></li>
+          <li><a className='text-black' href='/projects'>
+              Projects
+            </a></li>
+          <li><a className='text-black' href='/blog'>
+              Blog
+            </a></li>
+          <li>
+            <a className='text-black' href='/contactUs'>
+              Contact Us
+            </a>
+          </li>
         </ul>
         <button className='text-white font-bold flex items-center gap-2 bg-[#7E3C07] px-5 py-2 rounded'>
           <Image

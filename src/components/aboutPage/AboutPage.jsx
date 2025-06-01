@@ -1,38 +1,30 @@
 import React from 'react'
 import Banner from './banner/Banner'
-import About from './about/About'
-import ChooseUs from './chooseUs/ChooseUs'
-import Services from './services/Services'
+import AboutUs from './aboutUs/AboutUs'
+import WorkflowSection from './workflowSection/WorkflowSection'
 import DreamYardCallFormSection from '../common/dreamYardCall&FormSection/DreamYardCallFormSection'
-import Review from './review/Review'
-import Gallery from './gallery/Gallery'
-import ServiceArea from './serviceArea/ServiceArea'
-import ContactUs from './contactUs/ContactUs'
+import Review from '../homePage/review/Review'
+import ServiceArea from '../homePage/serviceArea/ServiceArea'
+import ContactUs from '../homePage/contactUs/ContactUs'
 import Map from '../common/map/Map'
 
-const HomePage = () => {
+const AboutPage = () => {
   return (
     <div>
       <section>
         <Banner />
       </section>
       <section>
-        <About />
+        <AboutUs />
       </section>
       <section>
-        <ChooseUs />
-      </section>
-      <section>
-        <Services />
+        <WorkflowSection />
       </section>
       <section>
         <DreamYardCallFormSection />
       </section>
       <section>
         <Review />
-      </section>
-      <section>
-        <Gallery />
       </section>
       <section>
         <ServiceArea />
@@ -47,4 +39,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default AboutPage
