@@ -1,22 +1,19 @@
 import React from 'react'
 import Banner from './banner/Banner'
-import Blogs from './blogsSection/Blogs'
-import GrandLandscapingBlogs from './grandLandscapingBlogs/GrandLandscapingBlogs'
+import WorkSection from './workSection/WorkSection'
 import ContactUs from '../homePage/contactUs/ContactUs'
 import Map from '../common/map/Map'
 
-const BlogPage = () => {
+const WorkPage = () => {
   return (
     <div>
       <section>
         <Banner />
       </section>
       <section>
-        <Blogs />
+        <WorkSection />
       </section>
-      <section>
-        <GrandLandscapingBlogs />
-      </section>
+      <section></section>
       <section>
         <ContactUs />
       </section>
@@ -27,4 +24,4 @@ const BlogPage = () => {
   )
 }
 
-export default BlogPage
+export default WorkPage

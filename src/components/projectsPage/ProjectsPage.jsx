@@ -1,21 +1,18 @@
 import React from 'react'
 import Banner from './banner/Banner'
-import Blogs from './blogsSection/Blogs'
-import GrandLandscapingBlogs from './grandLandscapingBlogs/GrandLandscapingBlogs'
+import DreamYardCallFormSection from '../common/dreamYardCall&FormSection/DreamYardCallFormSection'
 import ContactUs from '../homePage/contactUs/ContactUs'
 import Map from '../common/map/Map'
 
-const BlogPage = () => {
+const ProjectsPage = () => {
   return (
     <div>
       <section>
         <Banner />
       </section>
+      <section></section>
       <section>
-        <Blogs />
-      </section>
-      <section>
-        <GrandLandscapingBlogs />
+        <DreamYardCallFormSection />
       </section>
       <section>
         <ContactUs />
@@ -27,4 +24,4 @@ const BlogPage = () => {
   )
 }
 
-export default BlogPage
+export default ProjectsPage
