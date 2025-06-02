@@ -9,5 +9,7 @@ export const HeadingIconText = {
   aboutUs: 'About Us',
   workFlow: 'Work Flow',
   // Blog
-  blogs:"Blogs"
+  blogs:"Blogs",
+  // works
+  works:'Works'
 }
