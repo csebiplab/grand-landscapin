@@ -3,42 +3,33 @@ import { HeadingIconText } from '@/components/common/HeadingIconText'
 import React from 'react'
 
 const ServiceArea = () => {
+  const cities = ['Toronto', 'Vaughan', 'Markham', 'Richmond Hill']
+
   return (
     <div className='container full__section_x my-10'>
-      <div className='flex flex-col items-center justify-center'>
-        <div className='flex justify-center lg:justify-normal items-center'>
+      <div className='flex flex-col items-center justify-center text-center'>
+        <div className='flex justify-center lg:justify-start items-center'>
           <HeadingIcon text={HeadingIconText.serviceArea} />
         </div>
-        <h2 className='text-[25px] md:text-3xl lg:text-[32px] xl:text-[35px]  leading-[35px] font-bold text-black text-center pb-3'>
+        <h2 className='text-[25px] md:text-3xl lg:text-[32px] xl:text-[35px] leading-[35px] font-bold text-black pb-3'>
           Service Area
         </h2>
-        <p className='text-center text-lg'>
+        <p className='text-lg text-gray-700'>
           We provide landscaping and construction services
         </p>
       </div>
-      <div className='bg-black flex justify-center gap-16 px-[14px] py-[24px]  mt-4'>
-        <div className='flex items-center gap-16'>
-          <h3 className='text-base xl:text-lg 3xl:text-[21px] 5xl:text-[22px] font-bold text-white'>
-            Toronto
-          </h3>
-          <div className='h-4 w-[1px] bg-gray-400' />
-        </div>
-        <div className='flex  items-center gap-16'>
-          <h3 className='text-base xl:text-lg 3xl:text-[21px] 5xl:text-[22px] font-bold text-white'>
-            Vaughan
-          </h3>
-          <div className='h-4 w-[1px] bg-gray-400' />
-        </div>
-        <div className='flex items-center gap-16'>
-          <h3 className='text-base xl:text-lg 3xl:text-[21px] 5xl:text-[22px] font-bold text-white'>
-            Markham
-          </h3>
-          <div className='h-4 w-[1px] bg-gray-400' />
-        </div>
-        <div className='flex items-center gap-16'>
-          <h3 className='text-[15px] md:text-base xl:text-lg 3xl:text-[21px] 5xl:text-[22px] font-bold text-white'>
-            Richmond Hill
-          </h3>
+
+      {/* Cities Area */}
+      <div className='bg-black mt-6 px-4 py-6 rounded'>
+        <div className='flex flex-wrap justify-center gap-x-8 gap-y-4'>
+          {cities.map((city, index) => (
+            <div key={city} className='flex items-center text-white text-base md:text-lg font-bold'>
+              <h3>{city}</h3>
+              {index < cities.length - 1 && (
+                <div className='hidden sm:block h-4 w-[1px] bg-gray-400 mx-4' />
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </div>

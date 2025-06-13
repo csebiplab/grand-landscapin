@@ -4,7 +4,7 @@ import Image from 'next/image'
 const HeaderNavbar = () => {
   return (
     <div className='container relative z-10'>
-      <div className='absolute w-[1183px] mx-auto left-[368px] -top-7 px-4 py-3 bg-white flex items-center justify-between'>
+      <div className='absolute w-full md:w-full lg:w-full xl:w-[1000px] 2xl:w-[1183px] mx-auto left-0 xl:left-[250px] 2xl:left-[368px] -top-7 px-4 py-3 bg-white flex items-center justify-between'>
         <Image
           src='/grandLandscapingLogoNavbar.webp'
           width={248}

@@ -39,48 +39,48 @@ const reviewData = [
 const Review = () => {
   return (
     <div className='container full__section_x my-10'>
-      <div>
-        <div className='flex justify-center items-center'>
+      {/* Heading */}
+      <div className='text-center'>
+        <div className='flex justify-center'>
           <HeadingIcon text={HeadingIconText.chooseUs} />
         </div>
-        <h2 className='text-center text-[25px] md:text-3xl lg:text-[32px] xl:text-[35px]  leading-[35px] font-bold text-black pb-5'>
+        <h2 className='text-[25px] md:text-3xl lg:text-[32px] xl:text-[35px] leading-[35px] font-bold text-black pb-5'>
           Satisfied Customers
         </h2>
       </div>
-      <div className='grid grid-cols-3 gap-4'>
-        {reviewData.map(data => (
+
+      {/* Grid */}
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5'>
+        {reviewData.map((data) => (
           <div
             key={data.id}
-            className={`border rounded-lg px-[12px] md:px-0 py-[15px] !h-auto !md:h-full`}
+            className='border rounded-lg p-4 h-full bg-white shadow-sm'
           >
-            <div className='px-2'>
-              <div className='flex items-center gap-[10px]'>
-                <p className='font-family-secondary bg-primary-200 py-[6px] px-[14px] rounded-[50px] text-white text-xl 4xl:text-2xl 5xl:text-[25px] font-normal leading-normal'>
-                  {data.sort_name}
-                </p>
-                <div>
-                  <p className='font-family-secondary text-base 4xl:text-[17px] 5xl:text-lg font-bold text-black leading-normal'>
-                    {data.name}
+            <div className='flex items-center gap-3 mb-4'>
+              <p className='bg-primary-200 py-2 px-4 rounded-full text-white text-xl font-medium'>
+                {data.sort_name}
+              </p>
+              <div>
+                <p className='text-base font-bold text-black'>{data.name}</p>
+                <div className='flex items-center gap-2'>
+                  <Image
+                    src={data.star}
+                    alt='star icon'
+                    width={102}
+                    height={15}
+                  />
+                  <p className='text-xs text-gray-600 font-medium'>
+                    {data.date}
                   </p>
-                  <div className='flex items-center gap-[10px]'>
-                    <Image
-                      src={data.star}
-                      alt='star icon'
-                      width={102}
-                      height={15}
-                    />
-                    <p className='font-family-secondary text-xs text-dark-50 font-bold leading-normal'>
-                      {data.date}
-                    </p>
-                  </div>
                 </div>
               </div>
-
-              <p className='font-family-secondary py-[15px] text-base font-normal text-black leading-normal'>
-                {data.review}
-              </p>
-              <Image src={data.g} alt='Logo' width={236} height={32} />
             </div>
+
+            <p className='text-sm sm:text-base text-black mb-4'>
+              {data.review}
+            </p>
+
+            <Image src={data.g} alt='Logo' width={236} height={32} />
           </div>
         ))}
       </div>

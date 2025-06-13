@@ -116,7 +116,7 @@ const Footer = () => {
                       height={28}
                     />{' '}
                     <Link
-                      className='text-black'
+                      className='text-black text-xs md:text-[13px] 2xl:text-base'
                       href='mailto:grandlandscapinginterlocking@gmail.com'
                     >
                       grandlandscapinginterlocking@gmail.com

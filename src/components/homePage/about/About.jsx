@@ -5,22 +5,25 @@ import { HeadingIconText } from '@/components/common/HeadingIconText'
 
 const About = () => {
   return (
-    <div className='container my-14'>
-      <div className='full__section_r_p grid grid-cols-2 justify-between items-center'>
-        <Image
-          src='/homePageAbout.webp'
-          width={813}
-          height={762}
-          alt='Home About Image'
-        />
-        <div className='pl-5'>
-          <div>
+    <div className='container my-10 sm:my-14'>
+      <div className='full__section_r_p grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center'>
+        <div className='w-full h-auto'>
+          <Image
+            src='/homePageAbout.webp'
+            width={813}
+            height={762}
+            alt='Home About Image'
+            className='w-full h-auto object-cover rounded-xl'
+          />
+        </div>
+        <div className='px-4 md:px-0'>
+          <div className='mb-3 sm:mb-5'>
             <HeadingIcon text={HeadingIconText.about} />
           </div>
-          <h1 className='text-4xl font-bold'>
+          <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold leading-snug sm:leading-snug'>
             Reliable, High Quality & Affordable Landscape Construction
           </h1>
-          <p className='leading-8 mt-4'>
+          <p className='text-sm sm:text-base md:text-lg leading-6 sm:leading-7 mt-4'>
             Grand Landscaping & Interlocking is a boutique contracting company
             specializing in landscape construction services. We pride ourselves
             on building durable and beautiful landscapes, at fair and affordable

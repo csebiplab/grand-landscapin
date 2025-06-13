@@ -5,15 +5,18 @@ import React from 'react'
 
 const AboutUs = () => {
   return (
-    <div className='full__section_x my-12'>
-      <div className='grid grid-cols-5'>
-        <div className='col-span-3 flex items-center'>
+    <div className='full__section_x my-12 px-4 md:px-0'>
+      <div className='grid grid-cols-1 md:grid-cols-5 gap-8'>
+        {/* Text content */}
+        <div className='md:col-span-3 flex flex-col justify-center order-2 md:order-1'>
           <div>
-            <div className='flex justify-center lg:justify-normal items-center'>
+            <div className='flex justify-center lg:justify-normal items-center mb-4'>
               <HeadingIcon text={HeadingIconText.aboutUs} />
             </div>
-            <h1 className='text-4xl font-bold'>About Grand Landscaping & Interlocking</h1>
-            <p className='leading-9 mr-7'>
+            <h1 className='text-3xl sm:text-4xl font-bold mb-4 text-center md:text-left'>
+              About Grand Landscaping & Interlocking
+            </h1>
+            <p className='leading-7 sm:leading-9 text-base sm:text-lg max-w-full md:max-w-[90%] mx-auto md:mx-0'>
               Grand Landscaping & Interlocking is a boutique contracting company
               specializing in landscape construction services. We pride
               ourselves on building durable and beautiful landscapes, at fair
@@ -34,8 +37,10 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className='col-span-2'>
-          <div className='border border-gray-200 rounded-lg shadow-inner p-6 bg-white'>
+
+        {/* Form */}
+        <div className='md:col-span-2 order-1 md:order-2'>
+          <div className='border border-gray-200 rounded-lg shadow-inner p-6 bg-white max-w-full md:max-w-[90%] mx-auto md:mx-0'>
             <GetInTouchForm />
           </div>
         </div>

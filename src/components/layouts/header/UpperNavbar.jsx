@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const UpperNavbar = () => {
   return (
-    <div className='full__section_x flex justify-between pt-3 pb-12'>
+    <div className='full__section_x hidden md:flex justify-between pt-3 pb-12'>
       <div>
         <p className='text-sm font-bold text-white'>
           We provide landscaping and construction services
